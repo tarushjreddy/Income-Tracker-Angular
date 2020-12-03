@@ -1,53 +1,68 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
-*{
-font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
 }
-#nav{
-    // padding-left: 20px;
 
-// box-shadow: 0.5px 0.5px 10px black;
-display: flex;
-align-items: center;
-justify-content: center;
-    text-align: center;
-color: white;
-scale: (1.10);
-  font-family: 'Poppins', sans-serif;
+#nav {
+  // padding-left: 20px;
+
+  // box-shadow: 0.5px 0.5px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  scale: (1.1);
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
-    font-weight: 500;
-background: linear-gradient(to right, #e66465, #9198e5);
-// background-color: rgba(9, 132, 227, 0.4);
+  font-weight: 500;
+  background: linear-gradient(to right, #e66465, #9198e5);
+  // background-color: rgba(9, 132, 227, 0.4);
 }
-#logo{
-    height: 70px;
-margin-left: 10px;
-    width: 90px;
+#logo {
+  height: 70px;
+  margin-left: 10px;
+  width: 90px;
 }
-#total{
-    height: 300px;
-    background-color: #2d3436;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 90px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#total {
+  height: 300px;
+  padding: 20px;
+  background-color: #2d3436;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 90px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    // box-shadow: 0.5px 0.5px 10px black;
+  // box-shadow: 0.5px 0.5px 10px black;
 }
-#poo{
-    display: flex;
-    font-size: 50px;
-    justify-content: center;
-    align-items: center;
+#poo {
+  display: flex;
+  margin-bottom: 90px;
+
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
 }
-hr{
-    margin-right: 20px;
-    margin-left: 20px;
-    display: block;
-    display: flex;
+hr {
+  margin-right: 20px;
+  margin-left: 20px;
+  display: block;
+  display: flex;
+}
+.red {
+  color: red;
+  text-shadow: 0.5px 0.5px 10px black;
+}
+.white {
+  color: white;
+  text-shadow: 0.5px 0.5px 10px black;
+}
+.yellow {
+  color: #2ecc71;
+  text-shadow: 0.5px 0.5px 10px black;
 }

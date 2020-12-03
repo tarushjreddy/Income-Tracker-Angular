@@ -3,8 +3,25 @@
   <img src="../../assets/money_transfer_.svg" id="logo" alt="" />
 </div>
 <div id="total">
-  <div id="poo">Balance</div>
-  ₹6000
+  <div
+    id="poo"
+    [ngClass]="{
+      red: totalBudget < 350,
+
+      yellow: totalBudget > 5000
+    }"
+  >
+    Balance
+  </div>
+  <div
+    [ngClass]="{
+      red: totalBudget < 350,
+
+      yellow: totalBudget > 5000
+    }"
+  >
+    ₹{{ totalBudget }}/-
+  </div>
 </div>
 <div
   class="container"
@@ -26,5 +43,6 @@
   <app-budget
     [budgetItems]="budgetItems"
     (delete)="deleteItem($event)"
+    (update)="updateItem($event)"
   ></app-budget>
 </div>

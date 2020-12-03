@@ -1,5 +1,6 @@
 import { Budgetpro } from './../../shared/models/final';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-edit',
@@ -7,10 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./edit.component.scss'],
 })
 export class EditComponent implements OnInit {
-  @Input() item: Budgetpro;
+  @Input() items: Budgetpro;
 
-  constructor() {}
+  constructor(
+    public dialogRef: MatDialogRef<EditComponent>,
+    @Inject(MAT_DIALOG_DATA) public item: Budgetpro
+  ) {}
 
   ngOnInit(): void {}
-  onSubmitted(updatedItem: Budgetpro) {}
+  onSubmitted(updatedItem: Budgetpro) {
+    this.dialogRef.close(updatedItem);
+  }
 }

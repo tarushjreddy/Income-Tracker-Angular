@@ -18,6 +18,7 @@
               margin-bottom: 10px;
             "
             [item]="items"
+            (cardClick)="onCardClicked(items)"
             (xButtonClick)="onDeleteButtonClicked(items)"
           ></app-item-card>
         </div>
@@ -36,6 +37,7 @@
               margin-bottom: 10px;
             "
             [item]="items"
+            (cardClick)="onCardClicked(items)"
             (xButtonClick)="onDeleteButtonClicked(items)"
           ></app-item-card>
         </div>

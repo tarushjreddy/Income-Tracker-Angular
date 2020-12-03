@@ -9,12 +9,15 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ItemCardComponent implements OnInit {
   @Input() item: Budgetpro;
-  @Output()
-  xButtonClick: EventEmitter<any> = new EventEmitter<any>();
+  @Output() xButtonClick: EventEmitter<any> = new EventEmitter<any>();
+  @Output() cardClick: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() {}
 
   ngOnInit(): void {}
+  onCardClick() {
+    this.cardClick.emit();
+  }
   onxButttonClick() {
     this.xButtonClick.emit();
   }

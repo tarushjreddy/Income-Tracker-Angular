@@ -1,6 +1,7 @@
 <div class="root">
   <div
     class="budget-item"
+    (click)="onCardClick()"
     [ngClass]="{
       'color-red': item.amount >= 0,
       'color-green': item.amount <= 0
