@@ -1,0 +1,44 @@
+<form #itemForm="ngForm" (ngSubmit)="onSubmit(itemForm)">
+  <div class="field is-narrow" style="margin-top: 20px">
+    <div class="field-body">
+      <div class="field is-narrow">
+        <p class="control">
+          <input
+            id="op"
+            name="amount"
+            style="width: 190px"
+            class="input"
+            required
+            type="number"
+            placeholder="Amount"
+            [ngModel]="item.amount"
+          />
+        </p>
+      </div>
+
+      <div class="field is-narrow" style="margin-right: 10px">
+        <p class="control">
+          <input
+            id="op"
+            name="description"
+            style="width: 500px"
+            class="input"
+            required
+            type="text"
+            placeholder="Description"
+            [ngModel]="item.description"
+          />
+        </p>
+      </div>
+      <div class="field is-narrow" style="margin-left: 0px">
+        <button
+          [disabled]="!itemForm.valid"
+          type="submit"
+          class="button is-warning"
+        >
+          Add
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

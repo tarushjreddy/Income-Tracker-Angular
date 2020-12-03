@@ -1,0 +1,30 @@
+<div id="nav">
+  Income Tracker
+  <img src="../../assets/money_transfer_.svg" id="logo" alt="" />
+</div>
+<div id="total">
+  <div id="poo">Balance</div>
+  ₹6000
+</div>
+<div
+  class="container"
+  style="
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  "
+>
+  <app-add-item (formSubmit)="addItem($event)"> </app-add-item>
+</div>
+<br />
+<hr />
+<br />
+<div>
+  <app-budget
+    [budgetItems]="budgetItems"
+    (delete)="deleteItem($event)"
+  ></app-budget>
+</div>

@@ -1,0 +1,15 @@
+<div class="root">
+  <div
+    class="budget-item"
+    [ngClass]="{
+      'color-red': item.amount >= 0,
+      'color-green': item.amount <= 0
+    }"
+  >
+    <div class="description">{{ item.description }}</div>
+    <div class="amount">
+      <p>{{ item.amount }}</p>
+    </div>
+  </div>
+  <div class="x-icon-button" (click)="onxButttonClick()"></div>
+</div>

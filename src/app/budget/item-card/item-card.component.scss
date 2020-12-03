@@ -1,0 +1,86 @@
+@import "../../../styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+.root,
+.budget-item {
+  display: flex;
+  width: 100%;
+}
+.root {
+  position: relative;
+  &:hover {
+    .x-icon-button {
+      transform: scale(1);
+      opacity: 1;
+      box-shadow: 0.5px 0.5px 2px black;
+    }
+  }
+  .x-icon-button {
+    position: absolute;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: black;
+    right: -17px;
+    top: -17px;
+    // display: none;
+    background-image: url("../../../assets/753345.svg");
+    transform: scale(0);
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
+    transform: scale(0);
+    opacity: 0;
+    // /Users/tarushj.reddy/Desktop/IncomeTracker/my-app/src/assets/
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
+}
+
+.budget-item {
+  padding: 10px;
+  background-color: rgba(189, 195, 199, 0.01);
+  transition: background-color 300ms ease-in-out;
+  // border-radius: 95px;
+  &:hover {
+    background-color: rgba(127, 140, 141, 0.1);
+  }
+  cursor: pointer;
+  .description {
+    flex-grow: 1;
+    margin-left: 5px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    color: #00b894;
+  }
+  .amount {
+    padding-right: 2px;
+    padding-left: 2px;
+    border-radius: 3px;
+    background-color: rgba(85, 239, 196, 0.4);
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+
+    color: #00b894;
+  }
+}
+.color-red {
+  .description {
+    color: #00b894;
+  }
+  .amount {
+    background-color: rgba(85, 239, 196, 0.2);
+  }
+}
+.color-green {
+  .description {
+    color: #ff7675;
+  }
+  .amount {
+    color: #ff7675;
+    background-color: rgba(255, 118, 117, 0.2);
+  }
+}
