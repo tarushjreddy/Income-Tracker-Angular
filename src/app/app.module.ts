@@ -12,7 +12,6 @@ import { EditComponent } from './edit/edit.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ToggelComponent } from './toggel/toggel.component';
-
 @NgModule({
   declarations: [
     AppComponent,
